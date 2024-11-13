@@ -17,7 +17,7 @@ void Perestanovka(int rows, int columns, int** array) {
 			array[i][columns-j-1] = x;
 		}
 	}
-	cout << "Ïåðåñòàâëåíûé ìàññèâ:" << endl;
+	cout << "ÐŸÐµÑ€ÐµÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²:" << endl;
 	massiv(rows, columns, array);
 }
 void Sum(int rows, int columns, int** array) {
@@ -33,22 +33,22 @@ void Sum(int rows, int columns, int** array) {
 			}
 		}
 		if (sum != 0) {
-			cout << "Cóììà ýëåìåíòîâ ñòðîêè " << i+1 << " íå ñîäåðæàùåé íóëåé = " << sum << endl;
+			cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² ÑÑ‚Ñ€Ð¾ÐºÐ¸ " << i+1 << " Ð½Ðµ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‰ÐµÐ¹ Ð½ÑƒÐ»ÐµÐ¹ = " << sum << endl;
 			sum = 0;
 			k++;
 		}
 	}
 	if (k == 0)
-			cout << "Âñå ñòðîêè ñîäåðæàò 0" << endl;
+			cout << "Ð’ÑÐµ ÑÑ‚Ñ€Ð¾ÐºÐ¸ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ 0" << endl;
 }
 void Menu(int rows, int columns, int** array) {
 	int otv, min, max;
-	cout << "1. Ââîä ñ êëàâèàòóðû" << endl <<
-		"2. Ââîä ñëó÷àíûì îáðàçîì" << endl;
+	cout << "1. Ð²Ð²Ð¾Ð´ Ñ ÐºÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ñ‹" << endl <<
+		"2. Ð’Ð²Ð¾Ð´ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ð¼ Ð¾Ð±Ñ€Ð°Ð·Ð¾Ð¼" << endl;
 	cin >> otv;
 	if (otv == 1){
 		system("cls");
-		cout << "Ââåäèòå äàííûå ìàññèâà" << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°" << endl;
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < columns; j++)
 				cin >> array[i][j];
@@ -57,7 +57,7 @@ void Menu(int rows, int columns, int** array) {
 	}
 	else if (otv == 2) {
 		srand(time(0));
-		cout << "Ââåäèòå äèàïàçîí ÷èñåë â ìàññèâå" << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½ Ñ‡Ð¸ÑÐµÐ» Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ" << endl;
 		cin >> min >> max;
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < columns; j++)
@@ -66,7 +66,7 @@ void Menu(int rows, int columns, int** array) {
 		system("cls");
 	}
 	else {
-		cout << "Îøèáêà ââîäà" << endl;
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 		system("pause");
 		system("cls");
 		Menu(rows, columns, array);
@@ -78,22 +78,22 @@ int main() {
 	const int maxColumns = 10;
 	int rows, columns;
 	int** array{ new int *[maxRows] {} };
-	cout << "Ââåäèòå ðàçìåðíîñòü ìàññèâà:" << endl << 
-		"Êîëè÷åñòâî ñòðîê äîëæíî íå ïðåâûøàòü 8 è áûòü íå ìåíüøå 1" << endl <<
-		"Êîëè÷åñòâî ñòîëáöîâ äîëæíî íå ïðåâûøàòü 10 è áûòü íå ìåíüøå 1" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€Ð½Ð¾ÑÑ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð²Ð°:" << endl << 
+		"ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð¾Ðº Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ð½Ðµ Ð¿Ñ€Ð¸Ð²Ñ‹ÑˆÐ°Ñ‚ÑŒ 8 Ð¸ Ð±Ñ‹Ñ‚ÑŒ Ð½Ðµ Ð¼ÐµÐ½ÑŒÑˆÐµ 1" << endl <<
+		"ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ð»Ð±Ñ†Ð¾Ð² Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ð½Ðµ Ð¿Ñ€ÐµÐ²Ñ‹ÑˆÐ°Ñ‚ÑŒ 10 Ð¸ Ð±Ñ‹Ñ‚ÑŒ Ð½Ðµ Ð¼ÐµÐ½ÑŒÑˆÐµ 1" << endl;
 	cin >> rows >> columns;
 	while (rows<1 || rows>maxRows) {
-		cout << "Îøèáêà ïðè ââîäå ÷èñëà ñòðîê" << endl;
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð²Ð²Ð¾Ð´Ðµ Ñ‡Ð¸ÑÐ»Ð° ÑÑ‚Ñ€Ð¾Ðº" << endl;
 		cin >> rows;
 	}
 	while (columns<1 || columns>maxColumns) {
-		cout << "Îøèáêà ïðè ââîäå ÷èñëà ñòîëáöîâ" << endl;
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð²Ð²Ð¾Ð´Ðµ Ñ‡Ð¸ÑÐ»Ð° ÑÑ‚Ð¾Ð»Ð±Ñ†Ð¾Ð²" << endl;
 		cin >> columns;
 	}
 	for (int i = 0; i < rows; i++)
 		array[i] = new int[maxColumns] {};
 	Menu(rows, columns, array);
-	cout << "Èñõîäíûé ìàññèâ:" << endl;
+	cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²:" << endl;
 	massiv(rows, columns, array);
 	Sum(rows, columns, array);
 	Perestanovka(rows, columns, array);
