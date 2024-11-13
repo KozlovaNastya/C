@@ -6,13 +6,13 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, ".1251");
 	float e, x, sum;
-	cout << "Ââåäèòå õ è ïðåäåë" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ… Ð¸ Ð¿Ñ€ÐµÐ´ÐµÐ»" << endl;
 	cin >> x >> e;
 	if (x > -1 && x < 1) {
 		sum = Function(e, x) - Log1(x);
 		cout << fixed << setprecision(10) << Function(e, x) << endl << fixed << setprecision(10) << Log1(x) << endl;
-		cout << "Ñóììà ïî ñîáñòâåííîé ôóíêöèè îòëè÷àåòñÿ îò ñóììû ïî ñòàíäàðòíîé ôóíêöèè íà" << endl << sum;
+		cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ð¿Ð¾ ÑÐ¾Ð±ÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ð¹ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ð¾Ñ‚Ð»Ð¸Ñ‡Ð°ÐµÑ‚ÑÑ Ð¾Ñ‚ ÑÑƒÐ¼Ð¼Ñ‹ Ð¿Ð¾ ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ð¾Ð¹ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ð½Ð°" << endl << sum;
 	}
-	else cout << "Íåâåðíî ââåäåííûå äàííûå";
+	else cout << "ÐÐµÐ²ÐµÑ€Ð½Ð¾ Ð²Ð²ÐµÐ´ÐµÐ½Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ";
 	return 0;
 }
