@@ -22,21 +22,20 @@ bool checkAlone(string text, int i, const int n) {
     return 0;
 }
 
-
 int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     string text, letter, replace;
     string result = "";
-    // Ввод данных
-    cout << "Введите строку: ";
+    //Р’РІРѕРґ РґР°РЅРЅС‹С…
+    cout << "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ: ";
     getline(cin, text);
-    cout << "Введите букву для замены: ";
+    cout << "Р’РІРµРґРёС‚Рµ Р±СѓРєРІСѓ РґР»СЏ Р·Р°РјРµРЅС‹: ";
     getline(cin, letter);
-    cout << "Введите слово для замены: ";
+    cout << "Р’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ РґР»СЏ Р·Р°РјРµРЅС‹: ";
     getline(cin, replace);
     int n = text.length();
-    // Выполняем замену
+    //Р’С‹РїРѕР»РЅСЏРµРј Р·Р°РјРµРЅСѓ
     for (int i = 0; i < n; i++) {
         if (text[i] == letter[0]) {
             if (checkAlone(text, i, n))
@@ -47,7 +46,7 @@ int main() {
             result += text[i];
         }
     }
-    // Вывод результата
-    cout << "Результат: " << result << endl;
+    //Р’С‹РІРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚Р°
+    cout << "Р РµР·СѓР»СЊС‚Р°С‚: " << result << endl;
     return 0;
 }
