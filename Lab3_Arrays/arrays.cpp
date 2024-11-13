@@ -26,7 +26,7 @@ int getValue1(const int nmax) {
 		if (cin.fail() || n >= nmax || n <= 1) {
 			cin.clear();
 			cin.ignore(32767, '\n');
-			cout << "Íåâåğíî ââåäåíî, ïîïğîáéòå çàíîâî" << endl;
+			cout << "ĞĞµĞ²ĞµÑ€Ğ½Ğ¾ Ğ²Ğ²ĞµĞ´ĞµĞ½Ğ¾, Ğ¿Ğ¾Ğ¿Ñ€Ğ¾Ğ±ÑƒĞ¹Ñ‚Ğµ Ğ·Ğ°Ğ½Ğ¾Ğ²Ğ¾" << endl;
 		}
 		else
 		{
@@ -38,12 +38,12 @@ int getValue1(const int nmax) {
 int getValue2() {
 	while (true) {
 		int otv;
-		cout << "Âû õîòèòå çàïîëíèòü ìàññèâ ñàìè? (îòâåò äà = 1; íåò = 0)" << endl;
+		cout << "Ğ’Ñ‹ Ñ…Ğ¾Ñ‚Ğ¸Ñ‚Ğµ Ğ·Ğ°Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ¼Ğ°ÑÑĞ¸Ğ² ÑĞ°Ğ¼Ğ¸? (Ğ¾Ñ‚Ğ²ĞµÑ‚Ñ‹: Ğ´Ğ° = 1; Ğ½ĞµÑ‚ = 0)" << endl;
 		cin >> otv;
 		if (cin.fail() || otv != 1 && otv != 0) {
 			cin.clear();
 			cin.ignore(32767, '\n');
-			cout << "Íåâåğíî ââåäåí îòâåò, ïîïğîáéòå çàíîâî" << endl;
+			cout << "ĞĞµĞ²ĞµÑ€Ğ½Ğ¾ Ğ²Ğ²ĞµĞ´ĞµĞ½Ğ¾, Ğ¿Ğ¾Ğ¿Ñ€Ğ¾Ğ±ÑƒĞ¹Ñ‚Ğµ Ğ·Ğ°Ğ½Ğ¾Ğ²Ğ¾" << endl;
 		}
 		else
 		{
@@ -59,7 +59,7 @@ int getValue3() {
 		if (cin.fail()) {
 			cin.clear();
 			cin.ignore(32767, '\n');
-			cout << "Íåâåğíî ââåäåí îòâåò, ïîïğîáéòå çàíîâî" << endl;
+			cout << "ĞĞµĞ²ĞµÑ€Ğ½Ğ¾ Ğ²Ğ²ĞµĞ´ĞµĞ½Ğ¾, Ğ¿Ğ¾Ğ¿Ñ€Ğ¾Ğ±ÑƒĞ¹Ñ‚Ğµ Ğ·Ğ°Ğ½Ğ¾Ğ²Ğ¾" << endl;
 		}
 		else
 		{
@@ -91,11 +91,11 @@ void proiz(int array[], int n) {
 			break;
 		}
 	if (kol2 == 0)
-		cout << "Håò äâóõ íóëåâûõ ıëåìåíòîâ" << endl;
+		cout << "HĞµÑ‚ Ğ´Ğ²ÑƒÑ… Ğ½ÑƒĞ»ĞµĞ²Ñ‹Ñ… ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ²" << endl;
 	else {
 		for (i = kol1 + 1; i < kol2; i++)
 			proiz *= array[i];
-		cout << "Ïğîèçâåäåíèå  ıëåìåíòîâ ìàññèâà, ğàñïîëîæåííûõ ìåæäó ïåğâûì è âòîğûì íóëåâûìè ıëåìåíòàìè = " << proiz << endl;
+		cout << "ĞŸÑ€Ğ¾Ğ¸Ğ·Ğ²ĞµĞ´ĞµĞ½Ğ¸Ğµ  ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ² Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°, Ñ€Ğ°ÑĞ¿Ğ¾Ğ»Ğ¾Ğ¶ĞµĞ½Ğ½Ñ‹Ñ… Ğ¼ĞµĞ¶Ğ´Ñƒ Ğ¿ĞµÑ€Ğ²Ñ‹Ğ¼ Ğ¸ Ğ²Ñ‚Ğ¾Ñ€Ñ‹Ğ¼ Ğ½ÑƒĞ»ĞµĞ²Ñ‹Ğ¼Ğ¸ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ°Ğ¼Ğ¸ = " << proiz << endl;
 	}
 }
 void uborka(int array[], int n, int P) {
@@ -104,7 +104,7 @@ void uborka(int array[], int n, int P) {
 		if (array[i] == P)
 			chet++;
 	if (chet == 0)
-		cout << "Òàêèõ ıëåìåíòîâ â ìàññèâå íåò";
+		cout << "Ğ¢Ğ°ĞºĞ¸Ñ… ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ² Ğ² Ğ¼Ğ°ÑÑĞ¸Ğ²Ğµ Ğ½ĞµÑ‚";
 	else {
 		for (int i = 0; i < n; i++)
 			for (int j = 0; j < n - 1 - i; j++)
@@ -115,7 +115,7 @@ void uborka(int array[], int n, int P) {
 	for (int i = 0; i < n; i++)
 		if (array[i] == P)
 			array[i] = 0;
-	cout << "Íîâûé ìàññèâ:" << endl;
+	cout << "ĞĞ¾Ğ²Ñ‹Ğ¹ Ğ¼Ğ°ÑÑĞ¸Ğ²:" << endl;
 	for (int i = 0; i < n; i++)
 		cout << array[i] << " ";
 	}
@@ -124,15 +124,15 @@ int main() {
 	setlocale(LC_ALL, ".1251");
 	const int nmax = 10;
 	int P, array[nmax];
-	cout << "Ââåäèòå ğàçìåğ 1 <= êîë-âî ıëåìåíòîâ ìàññèâà >= " << nmax << endl;
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ€Ğ°Ğ·Ğ¼ĞµÑ€ 1 <= ĞºĞ¾Ğ»-Ğ²Ğ¾ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ² Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ° >= " << nmax << endl;
 	int n = getValue1(nmax);
 	int otv = getValue2();
-	cout << "Ââåäèòå íèæíşş ãğàíèöó èíòåğâàëà" << endl;
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¸Ğ¶Ğ½ÑÑ Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ†Ñƒ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ğ°" << endl;
 	int niz = getValue3();
-	cout << "Ââåäèòå âåğõíşş ãğàíèöó èíòåğâàëà" << endl;
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ²ĞµÑ€Ñ…Ğ½ÑÑ Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ†Ñƒ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ğ°" << endl;
 	int verh = getValue3();
 	if (otv == 1) {
-		cout << "Ââåäèòå ıëåìåíòû ìàññèâà:" << endl;
+		cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ñ‹ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°:" << endl;
 		for (int i = 0; i < n; i++)
 			cin >> array[i];
 	}
@@ -141,12 +141,12 @@ int main() {
 		for (int i = 0; i < n; i++) 
 			array[i] = niz + rand() % verh;
 	}
-	cout << "Èñõîäíûé ìàññèâ:" << endl;
+	cout << "Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğ¹ Ğ¼Ğ°ÑÑĞ¸Ğ²:" << endl;
 	for (int i = 0; i < n; i++)
 		cout << array[i] << " ";
-	cout << endl << "Êîëè÷åñòâî ïåğåìåí çíàêà = " << znak(array, n) << endl;
+	cout << endl << "ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½ Ğ·Ğ½Ğ°ĞºĞ° = " << znak(array, n) << endl;
 	proiz(array, n);
-	cout << "Ââåäèòå ıëåìåíò, êîòîğûå õîòèòå óáğàòü" << endl;
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚, ĞºĞ¾Ñ‚Ğ¾Ñ€Ñ‹Ğµ Ñ…Ğ¾Ñ‚Ğ¸Ñ‚Ğµ ÑƒĞ±Ñ€Ğ°Ñ‚ÑŒ" << endl;
 	cin >> P;
 	uborka(array, n, P);
 	return 0;
