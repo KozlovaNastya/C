@@ -1,2 +1,2 @@
-# C
+# C++
 University Labs in C++
