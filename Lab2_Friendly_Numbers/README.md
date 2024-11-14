@@ -5,7 +5,8 @@ This project solves the problem of finding friendly numbers in a given range fro
 The numbers 220 and 284 are friendly numbers because:
 - The sum of divisors of 220 (excluding 220) equals 284.
 - The sum of divisors of 284 (excluding 284) equals 220.
-Program Description
+
+### Program Description
 The program finds all pairs of friendly numbers in the range from 0 to the number entered by the user.
 
 ### Algorithm:
