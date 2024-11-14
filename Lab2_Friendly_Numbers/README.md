@@ -2,7 +2,7 @@
 This project solves the problem of finding friendly numbers in a given range from 0 to the number entered by the user. Friendly numbers are numbers for which the sum of divisors of one number equals another number, and the sum of divisors of the second number equals the first number.
 
 ### Example:
-- The numbers 220 and 284 are friendly numbers because:
+The numbers 220 and 284 are friendly numbers because:
 - The sum of divisors of 220 (excluding 220) equals 284.
 - The sum of divisors of 284 (excluding 284) equals 220.
 Program Description
